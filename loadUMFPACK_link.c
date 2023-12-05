@@ -1,14 +1,10 @@
 #include <stdio.h> //perror
-#include <dlfcn.h>
 #include "umfpack.h"
 #include <string.h>
 #include <stdlib.h>
 #include <ctype.h>
 
-/*
-gcc -o result loadUMFPACK_link.c -I/Users/walter/Documents/SuiteSparse/UMFPACK/Include -I/Users/walter/Documents/SuiteSparse/SuiteSparse_config -I/Users/walter/Documents/SuiteSparse/AMD/Include  -L
-/Users/walter/github/SuiteSparse/stable/lib/ -lumfpack -lm -lpthread
-*/
+
 /*********************************************************************************
  * failed_matrix.dat is a binary that stores our instances.
  *  

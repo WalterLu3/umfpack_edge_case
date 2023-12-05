@@ -1,5 +1,4 @@
 #include <stdio.h> //perror
-#include <dlfcn.h>
 #include "umfpack.h"
 #include <string.h>
 #include <stdlib.h>
@@ -29,10 +28,8 @@
  * This file does the following steps 
  * 1. Read in the matrix that fails to be factorized.
  * 2. Convert the matrix into int64 form. 
- * 3. Dynamically load the routines for factorization (int64 version). 
- *    (you need to input your UMFPACK_PATH to link to the dynamic libraray)
- * 4. Try to factorize it using int32 interface.
- * 5. numeric step never ends
+ * 3. Try to factorize it using int32 interface.
+ * 4. numeric step never ends
  ********************************************************************************/
 
 int main(int argc, char **argv){
